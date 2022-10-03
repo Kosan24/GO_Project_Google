@@ -1,7 +1,7 @@
 package main
 
 import (
-	"golesson/for_range"
+	"golesson/interfaces"
 )
 
 func main() {
@@ -28,6 +28,16 @@ func main() {
 	// nombres := []int{4, 6, 7, 0, 11}
 	// fmt.Println(functions.AdditionVariadic(nombres...))
 	//maps.Demo1()
-	for_range.Demo3()
+	//for_range.Demo3()
+	//structs.Demo2()
+	// nombrePaireCn := make(chan int)
+	// nombreimpaireCn := make(chan int)
+	// go channels.NombresPairs(nombrePaireCn)     //cift sayilar
+	// go channels.NombresimPairs(nombreimpaireCn) //tek sayilar
+
+	// nombrePaireTotal, nonombreimpaireTotal := <-nombrePaireCn, <-nombreimpaireCn
+	// multiplier := nombrePaireTotal * nonombreimpaireTotal
+	// fmt.Println("Multiplier : ", multiplier)
+	interfaces.Demo2()
 
 }
