@@ -1,7 +1,8 @@
 package main
 
 import (
-	"golesson/interfaces"
+	"fmt"
+	"golesson/project"
 )
 
 func main() {
@@ -38,6 +39,19 @@ func main() {
 	// nombrePaireTotal, nonombreimpaireTotal := <-nombrePaireCn, <-nombreimpaireCn
 	// multiplier := nombrePaireTotal * nonombreimpaireTotal
 	// fmt.Println("Multiplier : ", multiplier)
-	interfaces.Demo2()
+	//interfaces.Demo2()
+	//defer_statement.Demo3()
+	//interfaces.Demo3()
+	//fmt.Println(error_handling.TahminEt2(99))
+	//string_functions.Demo2()
+	//restful.Demo2()
+	product, _ := project.AddProduct()
+	fmt.Println(product)
+	products, _ := project.GetAllProducts()
 
+	for i := 0; i < len(products); i++ {
+		fmt.Println(products[i].ProductName)
+	}
+
+	fmt.Println(products)
 }
